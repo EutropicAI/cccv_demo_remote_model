@@ -18,7 +18,6 @@ class DEMOSRCNN(nn.Module):
         self.scale = scale
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        print("I'm a demo SRCNN architecture, I'm inferencing...")
         x = F.interpolate(x, scale_factor=self.scale, mode="bilinear")
 
         if self.num_channels == 1 and x.size(1) == 3:
@@ -123,3 +122,4 @@ def yuv_to_rgb(image: torch.Tensor) -> torch.Tensor:
 
 
 print("New Arch Registered: demo_srcnn")
+
