@@ -1,0 +1,10 @@
+{
+  "name": "DEMO_SRCNN_2x.pth",
+  "url": null,
+  "path": null,
+  "hash": null,
+  "arch": "demo_srcnn",
+  "model": "demo_srcnn",
+  "scale": 2,
+  "num_channels": 1
+}
